@@ -20,6 +20,12 @@ Le projet detecte les visages, reconnait des objets courants, affiche des points
 - Mode floutage des visages.
 - Sauvegarde volontaire de captures anonymisees.
 
+## Exemple
+
+![Exemple d'analyse temps reel avec Visio Camera Analyzer](docs/assets/example-snapshot.jpg)
+
+Capture du mode `all` avec detection de visage floute, objets, distance approximative, points du corps, main et comptage des doigts visibles.
+
 ## Installation
 
 ```bash
