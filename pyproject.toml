@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visio-camera-analyzer"
+version = "0.1.0"
+description = "Local webcam face detection and non-sensitive image analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mss>=10",
+    "opencv-contrib-python>=4.10,<5",
+    "pyobjc-framework-Quartz>=11; sys_platform == 'darwin'",
+]
+
+[project.scripts]
+visio-camera = "visio_camera_analyzer.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
